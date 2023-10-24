@@ -1,0 +1,16 @@
+{
+  "item.teqium.teqium": "Teqium",
+  "item.teqium.raw_teqium": "Raw Teqium",
+  "item.teqium.teqium_nugget": "Teqium Nugget",
+  "item.teqium.netherite_nugget": "Netherite Nugget",
+  "item.teqium.diamond_nugget": "Diamond Nugget",
+  "item.teqium.copper_nugget": "Copper Nugget",
+
+  "block.teqium.teqium_block": "Block of Teqium",
+  "block.teqium.raw_teqium_block": "Block of Raw Teqium",
+  "block.teqium.teqium_ore": "Teqium Ore",
+  "block.teqium.deepslate_teqium_ore": "Deepslate Teqium Ore",
+
+  "creativetab.teqium_tab": "Teqium Tab"
+
+}

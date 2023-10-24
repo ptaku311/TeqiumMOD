@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_teqium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "teqium:raw_teqium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teqiumteqium_from_smelting_raw_teqium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_teqium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teqiumteqium_from_smelting_raw_teqium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

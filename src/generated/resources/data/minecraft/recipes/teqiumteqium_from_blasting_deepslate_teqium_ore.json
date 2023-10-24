@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "teqium",
+  "ingredient": {
+    "item": "teqium:deepslate_teqium_ore"
+  },
+  "result": "teqium:teqium"
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "teqium:block/raw_teqium_block"
+    }
+  }
+}

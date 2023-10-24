@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "teqium:teqium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "teqium:teqium_nugget"
+  }
+}

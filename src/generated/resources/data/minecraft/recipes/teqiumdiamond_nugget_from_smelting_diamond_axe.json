@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "diamond_nugget",
+  "ingredient": {
+    "item": "minecraft:diamond_axe"
+  },
+  "result": "teqium:diamond_nugget"
+}

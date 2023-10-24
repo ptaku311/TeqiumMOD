@@ -1,0 +1,13 @@
+// 1.20.1	2023-10-24T10:03:59.5344473	Block States: teqium
+ce9424e880e05475180bca44343147553d0aa1a1 assets/teqium/blockstates/deepslate_teqium_ore.json
+01791e8a35248defd2ac9485f5d5a6c3a098407f assets/teqium/blockstates/raw_teqium_block.json
+3442856367225fd439f939a56bc559608465caca assets/teqium/blockstates/teqium_block.json
+d0cedf985e1fda003fe279477682733bf445bf27 assets/teqium/blockstates/teqium_ore.json
+ccccc65256403a782cbdfb49493e3c28b359b3d6 assets/teqium/models/block/deepslate_teqium_ore.json
+03d2f342c034f87a1188e534dc2cda44e48c07a6 assets/teqium/models/block/raw_teqium_block.json
+3764313f7bbf5b0ff693d72c6f0ca7cb140655ed assets/teqium/models/block/teqium_block.json
+8a94d635f53d8d23f2b13bfe3638e828c8c5582c assets/teqium/models/block/teqium_ore.json
+d4412d8c287739a1113d79b6a01a7f068bee42eb assets/teqium/models/item/deepslate_teqium_ore.json
+ec86d4fd3ec50b589389f798ffdf6a07e1b623d4 assets/teqium/models/item/raw_teqium_block.json
+1d2e43aa4aeabc82972c8b0161008b523590c37a assets/teqium/models/item/teqium_block.json
+2087463d059215e91a96fd4ef2e97d8ee5f789aa assets/teqium/models/item/teqium_ore.json
