@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    " XX",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "item": "teqium:copper_hoe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,4 @@
+// 1.20.1	2023-10-28T20:46:42.5238958	Registries
+534a8b9e2ba3caea872bbcfa9ddbe3dbc4cba272 data/teqium/forge/biome_modifier/add_teqium_ore.json
+f7b89fe246e461f00b45cb72493b266ade537fec data/teqium/worldgen/configured_feature/teqium_ore.json
+1790df76d0fffdd3f748cfcfccc44b8a6d948697 data/teqium/worldgen/placed_feature/teqium_placed.json

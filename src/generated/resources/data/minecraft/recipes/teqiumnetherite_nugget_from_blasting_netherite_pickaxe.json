@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "netherite_nugget",
+  "ingredient": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  "result": "teqium:netherite_nugget"
+}

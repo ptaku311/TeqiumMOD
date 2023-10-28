@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "teqium:teqium_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "result": {
+    "item": "teqium:teqium_shovel"
+  },
+  "template": {
+    "item": "teqium:teqium_upgrade_smithing_template"
+  }
+}

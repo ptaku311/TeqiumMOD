@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "teqium:teqium_ingot"
+    },
+    "Z": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "ZAZ",
+    "AXA",
+    "ZAZ"
+  ],
+  "result": {
+    "item": "teqium:teqium_upgrade_smithing_template"
+  },
+  "show_notification": true
+}

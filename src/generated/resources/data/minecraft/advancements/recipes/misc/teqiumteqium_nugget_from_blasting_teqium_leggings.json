@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_teqium_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "teqium:teqium_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teqiumteqium_nugget_from_blasting_teqium_leggings"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_teqium_leggings",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teqiumteqium_nugget_from_blasting_teqium_leggings"
+    ]
+  },
+  "sends_telemetry_event": false
+}

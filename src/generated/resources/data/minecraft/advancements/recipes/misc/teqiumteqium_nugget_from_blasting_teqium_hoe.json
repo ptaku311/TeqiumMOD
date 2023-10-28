@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_teqium_hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "teqium:teqium_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teqiumteqium_nugget_from_blasting_teqium_hoe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_teqium_hoe",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teqiumteqium_nugget_from_blasting_teqium_hoe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

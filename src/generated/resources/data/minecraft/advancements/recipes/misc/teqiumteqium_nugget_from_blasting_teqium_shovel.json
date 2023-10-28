@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_teqium_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "teqium:teqium_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teqiumteqium_nugget_from_blasting_teqium_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_teqium_shovel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teqiumteqium_nugget_from_blasting_teqium_shovel"
+    ]
+  },
+  "sends_telemetry_event": false
+}
