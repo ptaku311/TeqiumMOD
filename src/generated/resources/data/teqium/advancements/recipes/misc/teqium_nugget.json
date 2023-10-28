@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_teqium": {
+    "has_teqium_ingot": {
       "conditions": {
         "items": [
           {
             "items": [
-              "teqium:teqium"
+              "teqium:teqium_ingot"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_teqium",
+      "has_teqium_ingot",
       "has_the_recipe"
     ]
   ],

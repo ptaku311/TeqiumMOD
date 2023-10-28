@@ -19,17 +19,45 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.TEQIUM.get()))
                     .title(Component.translatable("creativetab.teqium_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(ModItems.TEQIUM.get());
                         pOutput.accept(ModItems.RAW_TEQIUM.get());
+                        pOutput.accept(ModItems.TEQIUM_INGOT.get());
+                        pOutput.accept(ModItems.TEQIUM_UPGRADE_SMITHING_TEMPLATE.get());
+
                         pOutput.accept(ModItems.TEQIUM_NUGGET.get());
                         pOutput.accept(ModItems.NETHERITE_NUGGET.get());
                         pOutput.accept(ModItems.DIAMOND_NUGGET.get());
                         pOutput.accept(ModItems.COPPER_NUGGET.get());
 
+                        pOutput.accept(ModItems.TEQIUM_HELMET.get());
+                        pOutput.accept(ModItems.TEQIUM_CHESTPLATE.get());
+                        pOutput.accept(ModItems.TEQIUM_LEGGINGS.get());
+                        pOutput.accept(ModItems.TEQIUM_BOOTS.get());
+
+                        pOutput.accept(ModItems.COPPER_HELMET.get());
+                        pOutput.accept(ModItems.COPPER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.COPPER_LEGGINGS.get());
+                        pOutput.accept(ModItems.COPPER_BOOTS.get());
+
+                        pOutput.accept(ModItems.TEQIUM_AXE.get());
+                        pOutput.accept(ModItems.TEQIUM_PICKAXE.get());
+                        pOutput.accept(ModItems.TEQIUM_HOE.get());
+                        pOutput.accept(ModItems.TEQIUM_SHOVEL.get());
+                        pOutput.accept(ModItems.TEQIUM_SWORD.get());
+
+                        pOutput.accept(ModItems.COPPER_AXE.get());
+                        pOutput.accept(ModItems.COPPER_PICKAXE.get());
+                        pOutput.accept(ModItems.COPPER_HOE.get());
+                        pOutput.accept(ModItems.COPPER_SHOVEL.get());
+                        pOutput.accept(ModItems.COPPER_SWORD.get());
+
                         pOutput.accept(ModBlocks.TEQIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_TEQIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.TEQIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_TEQIUM_ORE.get());
+
+
 
                     })
                     .build());

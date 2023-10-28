@@ -1,21 +1,35 @@
 package net.ptaq.teqium.item;
 
-import net.minecraft.world.item.Item;
-import net.minecraftforge.eventbus.EventBus;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ptaq.teqium.Teqium;
+import net.ptaq.teqium.item.custom.ModArmorMaterials;
+import net.ptaq.teqium.item.custom.ModTemplateItems;
+import net.ptaq.teqium.item.custom.ModToolTiers;
+
+import static net.minecraft.world.item.ArmorItem.*;
+import static net.minecraft.world.item.ArmorItem.Type.*;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, Teqium.MOD_ID);
+    private static final Item.Properties STACKS_TO_64 = new Item.Properties().stacksTo(64);
+
 
     public static final RegistryObject<Item> TEQIUM = ITEMS.register("teqium",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("teqium_upgrade_smithing_template",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_INGOT = ITEMS.register("teqium_ingot",
+            ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_TEQIUM = ITEMS.register("raw_teqium",
             ()-> new Item(new Item.Properties()));
+
+
+
     public static final RegistryObject<Item> TEQIUM_NUGGET = ITEMS.register("teqium_nugget",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> DIAMOND_NUGGET = ITEMS.register("diamond_nugget",
@@ -24,6 +38,52 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
             ()-> new Item(new Item.Properties()));
+
+
+
+    public static final RegistryObject<Item> TEQIUM_AXE = ITEMS.register("teqium_axe",
+            ()-> new AxeItem(ModToolTiers.TEQIUM, 6, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_PICKAXE = ITEMS.register("teqium_pickaxe",
+            ()-> new PickaxeItem(ModToolTiers.TEQIUM, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_HOE = ITEMS.register("teqium_hoe",
+            ()-> new HoeItem(ModToolTiers.TEQIUM, 0, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_SWORD = ITEMS.register("teqium_sword",
+            ()-> new SwordItem(ModToolTiers.TEQIUM, 4, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_SHOVEL = ITEMS.register("teqium_shovel",
+            ()-> new HoeItem(ModToolTiers.TEQIUM, 0, -2F, new Item.Properties()));
+
+    public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe",
+            ()-> new AxeItem(ModToolTiers.COPPER, 6, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
+            ()-> new PickaxeItem(ModToolTiers.COPPER, 1, -2.8F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_HOE = ITEMS.register("copper_hoe",
+            ()-> new HoeItem(ModToolTiers.COPPER, -2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword",
+            ()-> new SwordItem(ModToolTiers.COPPER, 3, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
+            ()-> new HoeItem(ModToolTiers.COPPER, 1, -2F, new Item.Properties()));
+
+
+
+    public static final RegistryObject<Item> TEQIUM_HELMET = ITEMS.register("teqium_helmet",
+            ()-> new ArmorItem(ModArmorMaterials.TEQIUM, Type.HELMET, new  Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_CHESTPLATE = ITEMS.register("teqium_chestplate",
+            ()-> new ArmorItem(ModArmorMaterials.TEQIUM, Type.CHESTPLATE, new  Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_LEGGINGS = ITEMS.register("teqium_leggings",
+            ()-> new ArmorItem(ModArmorMaterials.TEQIUM, Type.LEGGINGS, new  Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_BOOTS = ITEMS.register("teqium_boots",
+            ()-> new ArmorItem(ModArmorMaterials.TEQIUM, Type.BOOTS, new  Item.Properties()));
+    public static final RegistryObject<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
+            ()-> new ArmorItem(ModArmorMaterials.COPPER_INGOT, Type.HELMET, new  Item.Properties()));
+    public static final RegistryObject<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
+            ()-> new ArmorItem(ModArmorMaterials.COPPER_INGOT, Type.CHESTPLATE, new  Item.Properties()));
+    public static final RegistryObject<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
+            ()-> new ArmorItem(ModArmorMaterials.COPPER_INGOT, Type.LEGGINGS, new  Item.Properties()));
+    public static final RegistryObject<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
+            ()-> new ArmorItem(ModArmorMaterials.COPPER_INGOT, Type.BOOTS, new  Item.Properties()));
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

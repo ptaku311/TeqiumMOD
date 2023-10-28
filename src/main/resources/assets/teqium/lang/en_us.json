@@ -1,10 +1,36 @@
 {
   "item.teqium.teqium": "Teqium",
+  "item.teqium.teqium_upgrade_smithing_template": "Teqium Upgrade Smithing Template",
+  "item.teqium.teqium_ingot": "Teqium Ingot",
   "item.teqium.raw_teqium": "Raw Teqium",
+
+
   "item.teqium.teqium_nugget": "Teqium Nugget",
   "item.teqium.netherite_nugget": "Netherite Nugget",
   "item.teqium.diamond_nugget": "Diamond Nugget",
   "item.teqium.copper_nugget": "Copper Nugget",
+
+  "item.teqium.teqium_pickaxe": "Teqium Pickaxe",
+  "item.teqium.teqium_axe": "Teqium Axe",
+  "item.teqium.teqium_hoe": "Teqium Hoe",
+  "item.teqium.teqium_sword": "Teqium Sword",
+  "item.teqium.teqium_shovel": "Teqium Shovel",
+
+  "item.teqium.copper_pickaxe": "Copper Pickaxe",
+  "item.teqium.copper_axe": "Copper Axe",
+  "item.teqium.copper_hoe": "Copper Hoe",
+  "item.teqium.copper_sword": "Copper Sword",
+  "item.teqium.copper_shovel": "Copper Shovel",
+
+  "item.teqium.teqium_helmet": "Teqium Helmet",
+  "item.teqium.teqium_chestplate": "Teqium Chestplate",
+  "item.teqium.teqium_leggings": "Teqium Leggings",
+  "item.teqium.teqium_boots": "Teqium Boots",
+
+  "item.teqium.copper_helmet": "Copper Helmet",
+  "item.teqium.copper_chestplate": "Copper Chestplate",
+  "item.teqium.copper_leggings": "Copper Leggings",
+  "item.teqium.copper_boots": "Copper Boots",
 
   "block.teqium.teqium_block": "Block of Teqium",
   "block.teqium.raw_teqium_block": "Block of Raw Teqium",

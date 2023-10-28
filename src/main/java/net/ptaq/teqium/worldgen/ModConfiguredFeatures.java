@@ -26,7 +26,7 @@ public class ModConfiguredFeatures {
                         ModBlocks.TEQIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TEQIUM_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_TEQIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTeqiumOres, 9));
+        register(context, OVERWORLD_TEQIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTeqiumOres, 9, 0.5F));
     }
 
 

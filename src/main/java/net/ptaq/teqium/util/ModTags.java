@@ -10,6 +10,8 @@ import net.ptaq.teqium.Teqium;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_TEQIUM_TOOL = tag("needs_teqium_tool");
+        public static final TagKey<Block> NEEDS_COPPER_TOOL = tag("needs_copper_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Teqium.MOD_ID, name));
