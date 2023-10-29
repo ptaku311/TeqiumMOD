@@ -3,6 +3,10 @@
     "teqium:teqium_block",
     "teqium:raw_teqium_block",
     "teqium:deepslate_teqium_ore",
-    "teqium:teqium_ore"
+    "teqium:teqium_ore",
+    "teqium:teqium_bricks",
+    "teqium:teqium_bricks_wall",
+    "teqium:teqium_bricks_stairs",
+    "teqium:teqium_bricks_slab"
   ]
 }

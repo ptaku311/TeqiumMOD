@@ -4,10 +4,7 @@ import com.mojang.blaze3d.shaders.Uniform;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +29,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_TEQIUM_ORE = registerBlock("deepslate_teqium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
                     .strength(30.0f).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
+
+
+    public static final RegistryObject<Block> TEQIUM_BRICKS = registerBlock("teqium_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).sound(SoundType.NETHER_BRICKS)));
+    public static final RegistryObject<Block> TEQIUM_BRICKS_WALL = registerBlock("teqium_bricks_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.NETHER_BRICKS)));
+    public static final RegistryObject<Block> TEQIUM_BRICKS_STAIRS = registerBlock("teqium_bricks_stairs",
+            () -> new StairBlock(() -> ModBlocks.TEQIUM_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundType.NETHER_BRICKS)));
+    public static final RegistryObject<Block> TEQIUM_BRICKS_SLAB = registerBlock("teqium_bricks_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.NETHER_BRICKS)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

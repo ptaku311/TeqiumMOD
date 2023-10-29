@@ -32,10 +32,29 @@
   "item.teqium.copper_leggings": "Copper Leggings",
   "item.teqium.copper_boots": "Copper Boots",
 
+  "item.teqium.copper_dagger": "Copper Dagger",
+  "item.teqium.golden_dagger": "Golden Dagger",
+  "item.teqium.iron_dagger": "Iron Dagger",
+  "item.teqium.diamond_dagger": "Diamond Dagger",
+  "item.teqium.netherite_dagger": "Netherite Dagger",
+  "item.teqium.teqium_dagger": "Teqium Dagger",
+
+  "item.teqium.copper_big_sword": "Copper Big Sword",
+  "item.teqium.golden_big_sword": "Golden Big Sword",
+  "item.teqium.iron_big_sword": "Iron Big Sword",
+  "item.teqium.diamond_big_sword": "Diamond Big Sword",
+  "item.teqium.netherite_big_sword": "Nerherite Big Sword",
+  "item.teqium.teqium_big_sword": "Teqium Big Sword",
+
   "block.teqium.teqium_block": "Block of Teqium",
   "block.teqium.raw_teqium_block": "Block of Raw Teqium",
   "block.teqium.teqium_ore": "Teqium Ore",
   "block.teqium.deepslate_teqium_ore": "Deepslate Teqium Ore",
+
+  "block.teqium.teqium_bricks": "Teqium Bricks",
+  "block.teqium.teqium_bricks_wall": "Teqium Bricks Wall",
+  "block.teqium.teqium_bricks_slab": "Teqium Bricks Slab",
+  "block.teqium.teqium_bricks_stairs": "Teqium Bricks Stairs",
 
   "creativetab.teqium_tab": "Teqium Tab"
 

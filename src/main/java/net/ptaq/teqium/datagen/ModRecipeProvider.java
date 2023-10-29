@@ -22,18 +22,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     public static final List<ItemLike> TEQIUM_SMALTABLES = List.of(ModItems.RAW_TEQIUM.get(),
             ModBlocks.TEQIUM_ORE.get(),
             ModBlocks.DEEPSLATE_TEQIUM_ORE.get());
-    public static final List<ItemLike> DIAMOND_NUGGET_SMALTABLES = List.of(ModItems.DIAMOND_NUGGET.get(),
+    public static final List<ItemLike> DIAMOND_NUGGET_SMALTABLES = List.of(
             Items.DIAMOND_AXE, Items.DIAMOND_SWORD, Items.DIAMOND_HOE, Items.DIAMOND_PICKAXE, Items.DIAMOND_CHESTPLATE,
-            Items.DIAMOND_LEGGINGS, Items.DIAMOND_BOOTS, Items.DIAMOND_HELMET, Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND_SHOVEL);
-    public static final List<ItemLike> NETHERITE_NUGGET_SMALETABLES = List.of(ModItems.NETHERITE_NUGGET.get(),
+            Items.DIAMOND_LEGGINGS, Items.DIAMOND_BOOTS, Items.DIAMOND_HELMET, Items.DIAMOND_HORSE_ARMOR, Items.DIAMOND_SHOVEL,
+            ModItems.DIAMOND_DAGGER.get(), ModItems.DIAMOND_BIG_SWORD.get());
+    public static final List<ItemLike> NETHERITE_NUGGET_SMALETABLES = List.of(
             Items.NETHERITE_AXE, Items.NETHERITE_SWORD, Items.NETHERITE_HOE, Items.NETHERITE_PICKAXE, Items.NETHERITE_CHESTPLATE,
-            Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_HELMET, Items.NETHERITE_SHOVEL);
-    public static final List<ItemLike> COPPER_NUGGET_SMALETABLES = List.of(ModItems.COPPER_NUGGET.get(),
+            Items.NETHERITE_LEGGINGS, Items.NETHERITE_BOOTS, Items.NETHERITE_HELMET, Items.NETHERITE_SHOVEL,
+            ModItems.NETHERITE_DAGGER.get(), ModItems.NETHERITE_BIG_SWORD.get());
+    public static final List<ItemLike> COPPER_NUGGET_SMALETABLES = List.of(
             ModItems.COPPER_HELMET.get(), ModItems.COPPER_CHESTPLATE.get(), ModItems.COPPER_LEGGINGS.get(), ModItems.COPPER_BOOTS.get(),
-            ModItems.COPPER_AXE.get(), ModItems.COPPER_SWORD.get(), ModItems.COPPER_PICKAXE.get(), ModItems.COPPER_SHOVEL.get(), ModItems.COPPER_HOE.get());
-    public static final List<ItemLike> TEQIUM_NUGGET_SMALETABLES = List.of(ModItems.COPPER_NUGGET.get(),
+            ModItems.COPPER_AXE.get(), ModItems.COPPER_SWORD.get(), ModItems.COPPER_PICKAXE.get(), ModItems.COPPER_SHOVEL.get(), ModItems.COPPER_HOE.get(),
+            ModItems.COPPER_DAGGER.get(), ModItems.COPPER_BIG_SWORD.get());
+    public static final List<ItemLike> TEQIUM_NUGGET_SMALETABLES = List.of(
             ModItems.TEQIUM_HELMET.get(), ModItems.TEQIUM_CHESTPLATE.get(), ModItems.TEQIUM_LEGGINGS.get(), ModItems.TEQIUM_BOOTS.get(),
-            ModItems.TEQIUM_AXE.get(),ModItems.TEQIUM_PICKAXE.get(), ModItems.TEQIUM_SWORD.get(), ModItems.TEQIUM_SHOVEL.get(), ModItems.TEQIUM_HOE.get());
+            ModItems.TEQIUM_AXE.get(),ModItems.TEQIUM_PICKAXE.get(), ModItems.TEQIUM_SWORD.get(), ModItems.TEQIUM_SHOVEL.get(), ModItems.TEQIUM_HOE.get(),
+            ModItems.TEQIUM_DAGGER.get(), ModItems.TEQIUM_BIG_SWORD.get());
+    public static final List<ItemLike> IRON_NUGGET_SMALTABLES = List.of(
+            ModItems.IRON_DAGGER.get(), ModItems.IRON_BIG_SWORD.get());
+    public static final List<ItemLike> GOLD_NUGGET_SMALTABLES = List.of(
+            ModItems.GOLDEN_DAGGER.get(), ModItems.GOLDEN_BIG_SWORD.get());
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -50,17 +58,28 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, COPPER_NUGGET_SMALETABLES, RecipeCategory.MISC, ModItems.COPPER_NUGGET.get(),0.25f,100, "copper_nugget");
         oreBlasting(pWriter, TEQIUM_NUGGET_SMALETABLES, RecipeCategory.MISC, ModItems.TEQIUM_NUGGET.get(),0.25f,100, "copper_nugget");
         oreSmelting(pWriter, TEQIUM_NUGGET_SMALETABLES, RecipeCategory.MISC, ModItems.TEQIUM_NUGGET.get(),0.25f,100, "copper_nugget");
+        oreBlasting(pWriter, IRON_NUGGET_SMALTABLES, RecipeCategory.MISC, Items.IRON_NUGGET,0.25f,100, "iron_nugget1");
+        oreSmelting(pWriter, IRON_NUGGET_SMALTABLES, RecipeCategory.MISC, Items.IRON_NUGGET,0.25f,100, "iron_nugget1");
+        oreBlasting(pWriter, GOLD_NUGGET_SMALTABLES, RecipeCategory.MISC, Items.GOLD_NUGGET,0.25f,100, "gold_nugget1");
+        oreSmelting(pWriter, GOLD_NUGGET_SMALTABLES, RecipeCategory.MISC, Items.GOLD_NUGGET,0.25f,100, "gold_nugget1");
 
-        netheriteSmithing(pWriter, Items.NETHERITE_HELMET, RecipeCategory.MISC, ModItems.TEQIUM_HELMET.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, ModItems.TEQIUM_CHESTPLATE.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, ModItems.TEQIUM_LEGGINGS.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_BOOTS, RecipeCategory.MISC, ModItems.TEQIUM_BOOTS.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_HELMET, RecipeCategory.MISC, ModItems.TEQIUM_HELMET.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, ModItems.TEQIUM_CHESTPLATE.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, ModItems.TEQIUM_LEGGINGS.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_BOOTS, RecipeCategory.MISC, ModItems.TEQIUM_BOOTS.get());
 
-        netheriteSmithing(pWriter, Items.NETHERITE_SWORD, RecipeCategory.MISC, ModItems.TEQIUM_SWORD.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_AXE, RecipeCategory.MISC, ModItems.TEQIUM_AXE.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_SHOVEL, RecipeCategory.MISC, ModItems.TEQIUM_SHOVEL.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_HOE, RecipeCategory.MISC, ModItems.TEQIUM_HOE.get());
-        netheriteSmithing(pWriter, Items.NETHERITE_PICKAXE, RecipeCategory.MISC, ModItems.TEQIUM_PICKAXE.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_SWORD, RecipeCategory.MISC, ModItems.TEQIUM_SWORD.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_AXE, RecipeCategory.MISC, ModItems.TEQIUM_AXE.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_SHOVEL, RecipeCategory.MISC, ModItems.TEQIUM_SHOVEL.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_HOE, RecipeCategory.MISC, ModItems.TEQIUM_HOE.get());
+        TeqiumSmithing(pWriter, Items.NETHERITE_PICKAXE, RecipeCategory.MISC, ModItems.TEQIUM_PICKAXE.get());
+        TeqiumSmithing(pWriter, ModItems.NETHERITE_DAGGER.get(), RecipeCategory.MISC, ModItems.TEQIUM_DAGGER.get());
+        TeqiumSmithing(pWriter, ModItems.NETHERITE_BIG_SWORD.get(), RecipeCategory.MISC, ModItems.TEQIUM_BIG_SWORD.get());
+
+        netheriteSmithing(pWriter, ModItems.DIAMOND_DAGGER.get(), RecipeCategory.MISC, ModItems.NETHERITE_DAGGER.get());
+        netheriteSmithing(pWriter, ModItems.DIAMOND_BIG_SWORD.get(), RecipeCategory.MISC, ModItems.NETHERITE_BIG_SWORD.get());
+
+        // Copper tools
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_AXE.get())
                 .pattern(" XX")
@@ -107,6 +126,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(pWriter);
 
+        //Blocks and nuggets
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BLOCK.get())
                 .pattern("XXX")
                 .pattern("XXX")
@@ -147,6 +168,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.COPPER_NUGGET.get()), has(ModItems.COPPER_NUGGET.get()))
                 .save(pWriter);
 
+        //Copper Armor
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
@@ -179,6 +202,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(pWriter);
 
+        // Upgrade Template
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TEQIUM_UPGRADE_SMITHING_TEMPLATE.get())
                 .pattern("ZAZ")
                 .pattern("AXA")
@@ -198,6 +223,90 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('Z', Items.NETHERITE_INGOT)
                 .unlockedBy(getHasName(ModItems.TEQIUM.get()), has(ModItems.TEQIUM.get()))
                 .save(pWriter, new ResourceLocation("teqium_upgrade_smithing_template1"));
+
+        //daggers
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_DAGGER.get())
+                .pattern("  X")
+                .pattern(" A ")
+                .pattern("Z  ")
+                .define('X', ModItems.COPPER_NUGGET.get())
+                .define('A', Items.COPPER_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_DAGGER.get())
+                .pattern("  X")
+                .pattern(" A ")
+                .pattern("Z  ")
+                .define('X', Items.IRON_NUGGET)
+                .define('A', Items.IRON_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_DAGGER.get())
+                .pattern("  X")
+                .pattern(" A ")
+                .pattern("Z  ")
+                .define('X', Items.GOLD_NUGGET)
+                .define('A', Items.GOLD_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_DAGGER.get())
+                .pattern("  X")
+                .pattern(" A ")
+                .pattern("Z  ")
+                .define('X', ModItems.DIAMOND_NUGGET.get())
+                .define('A', Items.DIAMOND)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .save(pWriter);
+
+        // Big Swords
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.DIAMOND_BIG_SWORD.get())
+                .pattern("XAX")
+                .pattern("XAX")
+                .pattern(" Z ")
+                .define('X', ModItems.DIAMOND_NUGGET.get())
+                .define('A', Items.DIAMOND)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.IRON_BIG_SWORD.get())
+                .pattern("XAX")
+                .pattern("XAX")
+                .pattern(" Z ")
+                .define('X', Items.IRON_NUGGET)
+                .define('A', Items.IRON_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GOLDEN_BIG_SWORD.get())
+                .pattern("XAX")
+                .pattern("XAX")
+                .pattern(" Z ")
+                .define('X', Items.GOLD_NUGGET)
+                .define('A', Items.GOLD_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.COPPER_BIG_SWORD.get())
+                .pattern("XAX")
+                .pattern("XAX")
+                .pattern(" Z ")
+                .define('X', ModItems.COPPER_NUGGET.get())
+                .define('A', Items.COPPER_INGOT)
+                .define('Z', Items.STICK)
+                .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
+                .save(pWriter);
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.TEQIUM.get(),9)
@@ -251,8 +360,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected static void trimSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, ResourceLocation pLocation) {
         SmithingTrimRecipeBuilder.smithingTrim(Ingredient.of(pIngredientItem), Ingredient.of(ItemTags.TRIMMABLE_ARMOR), Ingredient.of(ItemTags.TRIM_MATERIALS), RecipeCategory.MISC).unlocks("has_smithing_trim_template", has(pIngredientItem)).save(pFinishedRecipeConsumer, pLocation);
     }
-    protected static void netheriteSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, RecipeCategory pCategory, Item pResultItem) {
+    protected static void TeqiumSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, RecipeCategory pCategory, Item pResultItem) {
         SmithingTransformRecipeBuilder.smithing(Ingredient.of(ModItems.TEQIUM_UPGRADE_SMITHING_TEMPLATE.get()), Ingredient.of(pIngredientItem), Ingredient.of(ModItems.TEQIUM_INGOT.get()), pCategory, pResultItem).unlocks("has_netherite_ingot", has(ModItems.TEQIUM_INGOT.get())).save(pFinishedRecipeConsumer, getItemName(pResultItem) + "_smithing");
+    }
+    protected static void netheriteSmithing(Consumer<FinishedRecipe> pFinishedRecipeConsumer, Item pIngredientItem, RecipeCategory pCategory, Item pResultItem) {
+        SmithingTransformRecipeBuilder.smithing(Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.of(pIngredientItem), Ingredient.of(Items.NETHERITE_INGOT), pCategory, pResultItem).unlocks("has_netherite_ingot", has(Items.NETHERITE_INGOT)).save(pFinishedRecipeConsumer, getItemName(pResultItem) + "_smithing");
     }
 
     protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {

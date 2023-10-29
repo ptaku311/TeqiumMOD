@@ -56,7 +56,21 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_TEQIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.TEQIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_TEQIUM_ORE.get());
+                        pOutput.accept(ModBlocks.TEQIUM_BRICKS.get());
 
+                        pOutput.accept(ModItems.COPPER_DAGGER.get());
+                        pOutput.accept(ModItems.GOLDEN_DAGGER.get());
+                        pOutput.accept(ModItems.IRON_DAGGER.get());
+                        pOutput.accept(ModItems.DIAMOND_DAGGER.get());
+                        pOutput.accept(ModItems.NETHERITE_DAGGER.get());
+                        pOutput.accept(ModItems.TEQIUM_DAGGER.get());
+
+                        pOutput.accept(ModItems.COPPER_BIG_SWORD.get());
+                        pOutput.accept(ModItems.GOLDEN_BIG_SWORD.get());
+                        pOutput.accept(ModItems.IRON_BIG_SWORD.get());
+                        pOutput.accept(ModItems.DIAMOND_BIG_SWORD.get());
+                        pOutput.accept(ModItems.NETHERITE_BIG_SWORD.get());
+                        pOutput.accept(ModItems.TEQIUM_BIG_SWORD.get());
 
 
                     })

@@ -13,8 +13,10 @@ import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.ptaq.teqium.Teqium;
+import net.ptaq.teqium.block.ModBlocks;
 import net.ptaq.teqium.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -72,6 +74,22 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.COPPER_CHESTPLATE);
         handheldItem(ModItems.COPPER_LEGGINGS);
         handheldItem(ModItems.COPPER_BOOTS);
+
+        handheldItem(ModItems.COPPER_DAGGER);
+        handheldItem(ModItems.GOLDEN_DAGGER);
+        handheldItem(ModItems.IRON_DAGGER);
+        handheldItem(ModItems.DIAMOND_DAGGER);
+        handheldItem(ModItems.NETHERITE_DAGGER);
+        handheldItem(ModItems.TEQIUM_DAGGER);
+
+        handheldItem(ModItems.COPPER_BIG_SWORD);
+        handheldItem(ModItems.GOLDEN_BIG_SWORD);
+        handheldItem(ModItems.IRON_BIG_SWORD);
+        handheldItem(ModItems.DIAMOND_BIG_SWORD);
+        handheldItem(ModItems.NETHERITE_BIG_SWORD);
+        handheldItem(ModItems.TEQIUM_BIG_SWORD);
+
+        wallItem(ModBlocks.TEQIUM_BRICKS_WALL, ModBlocks.TEQIUM_BRICKS);
 
     }
 
@@ -131,6 +149,15 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(Teqium.MOD_ID,"item/" + item.getId().getPath()));
+    }
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(Teqium.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Teqium.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

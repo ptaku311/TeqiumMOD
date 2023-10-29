@@ -84,6 +84,34 @@ public class ModItems {
 
 
 
+    public static final RegistryObject<Item> COPPER_DAGGER = ITEMS.register("copper_dagger",
+            ()-> new SwordItem(ModToolTiers.COPPER, 2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_DAGGER = ITEMS.register("golden_dagger",
+            ()-> new SwordItem(Tiers.GOLD, 2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_DAGGER = ITEMS.register("iron_dagger",
+            ()-> new SwordItem(Tiers.IRON, 2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_DAGGER = ITEMS.register("diamond_dagger",
+            ()-> new SwordItem(Tiers.DIAMOND, 2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_DAGGER = ITEMS.register("netherite_dagger",
+            ()-> new SwordItem(Tiers.NETHERITE, 2, -2F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_DAGGER = ITEMS.register("teqium_dagger",
+            ()-> new SwordItem(ModToolTiers.TEQIUM, 3, -2F, new Item.Properties()));
+
+
+    public static final RegistryObject<Item> COPPER_BIG_SWORD = ITEMS.register("copper_big_sword",
+            ()-> new SwordItem(ModToolTiers.COPPER, 4, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_BIG_SWORD = ITEMS.register("golden_big_sword",
+            ()-> new SwordItem(Tiers.GOLD, 4, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_BIG_SWORD = ITEMS.register("iron_big_sword",
+            ()-> new SwordItem(Tiers.IRON, 4, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_BIG_SWORD = ITEMS.register("diamond_big_sword",
+            ()-> new SwordItem(Tiers.DIAMOND, 4, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_BIG_SWORD = ITEMS.register("netherite_big_sword",
+            ()-> new SwordItem(Tiers.NETHERITE, 4, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_BIG_SWORD = ITEMS.register("teqium_big_sword",
+            ()-> new SwordItem(ModToolTiers.TEQIUM, 5, -3F, new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

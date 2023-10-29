@@ -26,6 +26,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.TEQIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.TEQIUM_BRICKS.get());
+        this.dropSelf(ModBlocks.TEQIUM_BRICKS_WALL.get());
+        this.dropSelf(ModBlocks.TEQIUM_BRICKS_STAIRS.get());
+        this.add(ModBlocks.TEQIUM_BRICKS_SLAB.get(), block -> createSlabItemTable(ModBlocks.TEQIUM_BRICKS_SLAB.get()));
         this.dropSelf(ModBlocks.RAW_TEQIUM_BLOCK.get());
 
         this.add(ModBlocks.TEQIUM_ORE.get(),

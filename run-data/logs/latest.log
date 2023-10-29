@@ -1,31 +1,31 @@
-[28paü2023 20:51:33.257] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\xptak\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, teqium, --all, --output, C:\Users\xptak\Desktop\ptq\src\generated\resources, --existing, C:\Users\xptak\Desktop\ptq\src\main\resources]
-[28paü2023 20:51:33.346] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[28paü2023 20:51:33.712] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[28paü2023 20:51:33.860] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/xptak/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[28paü2023 20:51:34.985] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[28paü2023 20:51:34.996] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[28paü2023 20:51:35.009] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
-[28paü2023 20:51:35.021] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
-[28paü2023 20:51:35.149] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[28paü2023 20:51:39.239] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\xptak\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, teqium, --all, --output, C:\Users\xptak\Desktop\ptq\src\generated\resources, --existing, C:\Users\xptak\Desktop\ptq\src\main\resources]
-[28paü2023 20:51:41.223] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [teqium]
-[28paü2023 20:51:50.117] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
-[28paü2023 20:51:50.123] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
-[28paü2023 20:51:51.495] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/xptak/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[28paü2023 20:51:51.496] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/xptak/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[28paü2023 20:51:51.831] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[28paü2023 20:51:52.306] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 475 ms
-[28paü2023 20:51:52.306] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[28paü2023 20:51:52.440] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 133 ms
-[28paü2023 20:51:52.441] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: teqium
-[28paü2023 20:51:52.662] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: teqium finished after 221 ms
-[28paü2023 20:51:52.662] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: teqium
-[28paü2023 20:51:52.745] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: teqium finished after 81 ms
-[28paü2023 20:51:52.745] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id teqium
-[28paü2023 20:51:52.766] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id teqium finished after 20 ms
-[28paü2023 20:51:52.766] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id teqium
-[28paü2023 20:51:52.769] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id teqium finished after 2 ms
-[28paü2023 20:51:52.769] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[28paü2023 20:51:52.788] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 18 ms
-[28paü2023 20:51:52.788] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 958 ms
-[28paü2023 20:51:52.828] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 330, old count: 330, new count: 331, removed stale: 0, written: 0
+[29paü2023 19:33:54.848] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\xptak\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.2.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, teqium, --all, --output, C:\Users\xptak\Desktop\ptq\src\generated\resources, --existing, C:\Users\xptak\Desktop\ptq\src\main\resources]
+[29paü2023 19:33:54.862] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8.1 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[29paü2023 19:33:55.241] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[29paü2023 19:33:55.418] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/xptak/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[29paü2023 19:33:56.392] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.2.0\7f9181f85acc66547685a72020713fc8cbde98\javafmllanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29paü2023 19:33:56.404] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.2.0\7872f5205685fdd26fae39b1be79b0e60ca5b7bd\lowcodelanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29paü2023 19:33:56.412] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.2.0\d501d161cabed08b3c139a2c6217b02a39f3c3e9\mclanguage-1.20.1-47.2.0.jar is missing mods.toml file
+[29paü2023 19:33:56.424] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\xptak\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.2.0\ffd3c6debac0a388c9e33ac43c9f5eafb91cb466\fmlcore-1.20.1-47.2.0.jar is missing mods.toml file
+[29paü2023 19:33:56.685] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[29paü2023 19:34:01.073] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\xptak\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, teqium, --all, --output, C:\Users\xptak\Desktop\ptq\src\generated\resources, --existing, C:\Users\xptak\Desktop\ptq\src\main\resources]
+[29paü2023 19:34:02.089] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [teqium]
+[29paü2023 19:34:15.008] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.2.0, for MC 1.20.1 with MCP 20230612.114412
+[29paü2023 19:34:15.009] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.2.0 Initialized
+[29paü2023 19:34:16.867] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/xptak/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[29paü2023 19:34:16.868] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/xptak/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.2.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[29paü2023 19:34:17.414] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[29paü2023 19:34:19.010] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1595 ms
+[29paü2023 19:34:19.010] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[29paü2023 19:34:19.323] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 312 ms
+[29paü2023 19:34:19.324] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: teqium
+[29paü2023 19:34:19.895] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: teqium finished after 570 ms
+[29paü2023 19:34:19.895] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: teqium
+[29paü2023 19:34:20.101] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: teqium finished after 205 ms
+[29paü2023 19:34:20.102] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id teqium
+[29paü2023 19:34:20.152] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id teqium finished after 50 ms
+[29paü2023 19:34:20.152] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id teqium
+[29paü2023 19:34:20.155] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id teqium finished after 2 ms
+[29paü2023 19:34:20.162] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[29paü2023 19:34:20.267] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 104 ms
+[29paü2023 19:34:20.268] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 2853 ms
+[29paü2023 19:34:20.484] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 418, old count: 402, new count: 419, removed stale: 0, written: 18

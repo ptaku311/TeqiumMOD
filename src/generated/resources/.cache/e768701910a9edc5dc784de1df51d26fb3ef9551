@@ -1,7 +1,9 @@
-// 1.20.1	2023-10-28T09:39:41.6497835	Item Models: teqium
+// 1.20.1	2023-10-29T19:34:20.2712023	Item Models: teqium
 b2859f99103af15983683bfd43bdb2e03e3b1cfb assets/teqium/models/item/copper_axe.json
+6a929bfaacef344e132fe8755942360de4bcce9c assets/teqium/models/item/copper_big_sword.json
 fc9f7b5bec9e8e6e91f8f8dd9a7f979f2fc4e0e8 assets/teqium/models/item/copper_boots.json
 d63df695666804b50959d5eec03ddc8003ed3d3c assets/teqium/models/item/copper_chestplate.json
+b682e3f90e2d112b645ce788714442a9e9206270 assets/teqium/models/item/copper_dagger.json
 69f5534948e102101b7f9e12e1747217f84e9291 assets/teqium/models/item/copper_helmet.json
 dc4903610bf8a72b0b2d7a27a54ab882ba97cbde assets/teqium/models/item/copper_hoe.json
 97cd148a4970123112e43086c498d36efa594acf assets/teqium/models/item/copper_leggings.json
@@ -9,11 +11,20 @@ dc4903610bf8a72b0b2d7a27a54ab882ba97cbde assets/teqium/models/item/copper_hoe.js
 375286da0d53f1115fe657d80f9c5d3d7731ec2c assets/teqium/models/item/copper_pickaxe.json
 2c49031e2d02dea9f4ff0a57bd73d1de973ab7a7 assets/teqium/models/item/copper_shovel.json
 17dd8cd50ae45e11f47f99a452f2d7f858a892ca assets/teqium/models/item/copper_sword.json
+f85394b36589ab5b12d898d30552560b7fd9ed79 assets/teqium/models/item/diamond_big_sword.json
+f534e383333fd4ce06b7bff6d96bc9d20503bb1c assets/teqium/models/item/diamond_dagger.json
 5d4c7df2be04f894d1fff003d17d53fb38bf1b4e assets/teqium/models/item/diamond_nugget.json
+96c3205a73c0c837ddeb0c1c2563d9d3eba0be62 assets/teqium/models/item/golden_big_sword.json
+f9d36563b42e7b537895c331060a9f280349e4df assets/teqium/models/item/golden_dagger.json
+c26495e0d6ea3cc25d4ff5ce6e4073388ce90e93 assets/teqium/models/item/iron_big_sword.json
+3d4d117d447804040642265f6098df1badf72d00 assets/teqium/models/item/iron_dagger.json
+909070e3ef48c738c07ded95d9763cc82b9e5251 assets/teqium/models/item/netherite_big_sword.json
+aae4dafa203ddaf37f758312b1e7f226da988be8 assets/teqium/models/item/netherite_dagger.json
 5994998e578644f103b364e232f00362fdb8e0a5 assets/teqium/models/item/netherite_nugget.json
 6ddcd3e335493b8d4ede6dcc27465d33eb4d2c70 assets/teqium/models/item/raw_teqium.json
 464d3d775efa95f35406df3dbc834c001cfb4fed assets/teqium/models/item/teqium.json
 5326ec5de84cdfd7c9d456b39c4f4ba971c0c8cb assets/teqium/models/item/teqium_axe.json
+fc5b3df56f2a5267828be63522bc527847744ced assets/teqium/models/item/teqium_big_sword.json
 737ace84798df02a432026d883e580cd32af7c6a assets/teqium/models/item/teqium_boots.json
 ee408b0af70681547ca5939ad46e7924c2802017 assets/teqium/models/item/teqium_boots_amethyst_trim.json
 ed7d6855128d854579db1d2009b9fbcd7c8c7c06 assets/teqium/models/item/teqium_boots_copper_trim.json
@@ -25,6 +36,7 @@ ed7d6855128d854579db1d2009b9fbcd7c8c7c06 assets/teqium/models/item/teqium_boots_
 3f93e6247b42c1ccc0ad231d6688aa606f6a5555 assets/teqium/models/item/teqium_boots_netherite_trim.json
 a5cd30ffb538c6b80893995796f36aacf1eb1229 assets/teqium/models/item/teqium_boots_quartz_trim.json
 dac6b8afef496c4ab46d439028448cd6d762c79a assets/teqium/models/item/teqium_boots_redstone_trim.json
+8d761a90b77743aed11411b7f68d00e29d2dc0f7 assets/teqium/models/item/teqium_bricks_wall.json
 61296ccf8d0b81a59ffc8aab70555dc52b95db55 assets/teqium/models/item/teqium_chestplate.json
 1ac77f3f07584c255efdbb81bd3382967959868e assets/teqium/models/item/teqium_chestplate_amethyst_trim.json
 412715770939b21185090bc3774747fce4d51f03 assets/teqium/models/item/teqium_chestplate_copper_trim.json
@@ -36,6 +48,7 @@ c36ea7173ffc1630664ef8a44c4f0f56b80ad09e assets/teqium/models/item/teqium_chestp
 f4d575030b21f75eba80517e50dd41607434eb48 assets/teqium/models/item/teqium_chestplate_netherite_trim.json
 ffe6ffec529e4044ee22135ea5dac10000fcb9d4 assets/teqium/models/item/teqium_chestplate_quartz_trim.json
 e91a38f06db24cc7aa4af6507792c030cfb26d96 assets/teqium/models/item/teqium_chestplate_redstone_trim.json
+068fefb9f9141fb0daf385638d66e245a70f42d6 assets/teqium/models/item/teqium_dagger.json
 5197a46847c8f0bd3c9caf0644518e949683cd62 assets/teqium/models/item/teqium_helmet.json
 7e987d4b2d4530ea11413fe13c27c33112edd9d9 assets/teqium/models/item/teqium_helmet_amethyst_trim.json
 e627f3b25cb542a8f2f6541bfb5aca22988d265b assets/teqium/models/item/teqium_helmet_copper_trim.json
