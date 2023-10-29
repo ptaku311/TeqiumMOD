@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "teqium:block/teqium_bricks",
+    "side": "teqium:block/teqium_bricks",
+    "top": "teqium:block/teqium_bricks"
+  }
+}

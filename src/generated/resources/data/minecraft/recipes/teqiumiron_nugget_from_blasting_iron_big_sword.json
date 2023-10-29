@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "iron_nugget1",
+  "ingredient": {
+    "item": "teqium:iron_big_sword"
+  },
+  "result": "minecraft:iron_nugget"
+}

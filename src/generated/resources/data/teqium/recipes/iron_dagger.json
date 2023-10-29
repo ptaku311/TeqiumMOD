@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "minecraft:iron_nugget"
+    },
+    "Z": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  X",
+    " A ",
+    "Z  "
+  ],
+  "result": {
+    "item": "teqium:iron_dagger"
+  },
+  "show_notification": true
+}

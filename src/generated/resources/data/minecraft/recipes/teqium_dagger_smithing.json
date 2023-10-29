@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "teqium:teqium_ingot"
+  },
+  "base": {
+    "item": "teqium:netherite_dagger"
+  },
+  "result": {
+    "item": "teqium:teqium_dagger"
+  },
+  "template": {
+    "item": "teqium:teqium_upgrade_smithing_template"
+  }
+}

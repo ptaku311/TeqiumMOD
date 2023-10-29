@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "gold_nugget1",
+  "ingredient": {
+    "item": "teqium:golden_dagger"
+  },
+  "result": "minecraft:gold_nugget"
+}

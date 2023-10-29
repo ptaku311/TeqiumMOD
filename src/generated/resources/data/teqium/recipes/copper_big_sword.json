@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:copper_ingot"
+    },
+    "X": {
+      "item": "teqium:copper_nugget"
+    },
+    "Z": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "XAX",
+    " Z "
+  ],
+  "result": {
+    "item": "teqium:copper_big_sword"
+  },
+  "show_notification": true
+}

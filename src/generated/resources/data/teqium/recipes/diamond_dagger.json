@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "teqium:diamond_nugget"
+    },
+    "Z": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  X",
+    " A ",
+    "Z  "
+  ],
+  "result": {
+    "item": "teqium:diamond_dagger"
+  },
+  "show_notification": true
+}

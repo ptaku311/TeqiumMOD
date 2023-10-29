@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_teqium_dagger": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "teqium:teqium_dagger"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:teqiumteqium_nugget_from_smelting_teqium_dagger"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_teqium_dagger",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:teqiumteqium_nugget_from_smelting_teqium_dagger"
+    ]
+  },
+  "sends_telemetry_event": false
+}

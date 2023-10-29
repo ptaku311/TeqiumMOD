@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "teqium:block/teqium_bricks_slab"
+    },
+    "type=double": {
+      "model": "teqium:block/teqium_bricks"
+    },
+    "type=top": {
+      "model": "teqium:block/teqium_bricks_slab_top"
+    }
+  }
+}
