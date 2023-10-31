@@ -1,6 +1,5 @@
 package net.ptaq.teqium.block;
 
-import com.mojang.blaze3d.shaders.Uniform;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,13 +32,25 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TEQIUM_BRICKS = registerBlock("teqium_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).sound(SoundType.NETHER_BRICKS)));
-    public static final RegistryObject<Block> TEQIUM_BRICKS_WALL = registerBlock("teqium_bricks_wall",
+    public static final RegistryObject<Block> TEQIUM_BRICK_WALL = registerBlock("teqium_brick_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.NETHER_BRICKS)));
-    public static final RegistryObject<Block> TEQIUM_BRICKS_STAIRS = registerBlock("teqium_bricks_stairs",
+    public static final RegistryObject<Block> TEQIUM_BRICK_STAIRS = registerBlock("teqium_brick_stairs",
             () -> new StairBlock(() -> ModBlocks.TEQIUM_BRICKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundType.NETHER_BRICKS)));
-    public static final RegistryObject<Block> TEQIUM_BRICKS_SLAB = registerBlock("teqium_bricks_slab",
+    public static final RegistryObject<Block> TEQIUM_BRICK_SLAB = registerBlock("teqium_brick_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.NETHER_BRICKS)));
+
+    public static final RegistryObject<Block> SNOW_BRICKS = registerBlock("snow_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.SNOW_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundType.SNOW)));
+    public static final RegistryObject<Block> SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.SNOW)));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

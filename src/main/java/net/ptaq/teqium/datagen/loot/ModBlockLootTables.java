@@ -1,10 +1,8 @@
 package net.ptaq.teqium.datagen.loot;
 
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -27,10 +25,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.TEQIUM_BLOCK.get());
         this.dropSelf(ModBlocks.TEQIUM_BRICKS.get());
-        this.dropSelf(ModBlocks.TEQIUM_BRICKS_WALL.get());
-        this.dropSelf(ModBlocks.TEQIUM_BRICKS_STAIRS.get());
-        this.add(ModBlocks.TEQIUM_BRICKS_SLAB.get(), block -> createSlabItemTable(ModBlocks.TEQIUM_BRICKS_SLAB.get()));
+        this.dropSelf(ModBlocks.TEQIUM_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.TEQIUM_BRICK_STAIRS.get());
+        this.add(ModBlocks.TEQIUM_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.TEQIUM_BRICK_SLAB.get()));
         this.dropSelf(ModBlocks.RAW_TEQIUM_BLOCK.get());
+
+        this.dropSelf(ModBlocks.SNOW_BRICKS.get());
+        this.dropSelf(ModBlocks.SNOW_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.SNOW_BRICK_STAIRS.get());
+        this.add(ModBlocks.SNOW_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.SNOW_BRICK_SLAB.get()));
 
         this.add(ModBlocks.TEQIUM_ORE.get(),
                 block -> createCopperOreDrops(ModBlocks.TEQIUM_ORE.get(), ModItems.RAW_TEQIUM.get()));

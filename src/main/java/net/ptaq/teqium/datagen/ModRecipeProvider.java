@@ -1,5 +1,6 @@
 package net.ptaq.teqium.datagen;
 
+import com.mojang.datafixers.types.templates.Tag;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
@@ -9,12 +10,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
-import net.minecraftforge.fml.common.Mod;
 import net.ptaq.teqium.Teqium;
 import net.ptaq.teqium.block.ModBlocks;
 import net.ptaq.teqium.item.ModItems;
 
-import javax.xml.transform.Result;
+import javax.swing.text.html.HTML;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -126,7 +126,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(pWriter);
 
-        //Blocks and nuggets
+        //Blocks
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_TEQIUM_BLOCK.get())
+                .pattern("XXX")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModItems.RAW_TEQIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_TEQIUM.get()), has(ModItems.RAW_TEQIUM.get()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BLOCK.get())
                 .pattern("XXX")
@@ -135,6 +143,75 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('X', ModItems.TEQIUM.get())
                 .unlockedBy(getHasName(ModItems.TEQIUM.get()), has(ModItems.TEQIUM.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BRICKS.get(), 8)
+                .pattern("   ")
+                .pattern("XX ")
+                .pattern("XX ")
+                .define('X', ModItems.TEQIUM.get())
+                .unlockedBy(getHasName(ModItems.TEQIUM.get()), has(ModItems.TEQIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BRICK_STAIRS.get(), 6)
+                .pattern("X  ")
+                .pattern("XX ")
+                .pattern("XXX")
+                .define('X', ModBlocks.TEQIUM_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TEQIUM_BRICKS.get()), has(ModBlocks.TEQIUM_BRICKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BRICK_SLAB.get(), 6)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XXX")
+                .define('X', ModBlocks.TEQIUM_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TEQIUM_BRICKS.get()), has(ModBlocks.TEQIUM_BRICKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.TEQIUM_BRICK_WALL.get(), 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModBlocks.TEQIUM_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.TEQIUM_BRICKS.get()), has(ModBlocks.TEQIUM_BRICKS.get()))
+                .save(pWriter);
+
+        // snow bricks
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SNOW_BRICKS.get(), 4)
+                .pattern("   ")
+                .pattern("XX ")
+                .pattern("XX ")
+                .define('X', Items.SNOW_BLOCK)
+                .unlockedBy(getHasName(Items.SNOW_BLOCK), has(Items.SNOW_BLOCK))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SNOW_BRICK_STAIRS.get(), 6)
+                .pattern("X  ")
+                .pattern("XX ")
+                .pattern("XXX")
+                .define('X', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.SNOW_BRICKS.get()), has(ModBlocks.SNOW_BRICKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SNOW_BRICK_SLAB.get(), 6)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XXX")
+                .define('X', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.SNOW_BRICKS.get()), has(ModBlocks.SNOW_BRICKS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SNOW_BRICK_WALL.get(), 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ModBlocks.SNOW_BRICKS.get())
+                .unlockedBy(getHasName(ModBlocks.SNOW_BRICKS.get()), has(ModBlocks.SNOW_BRICKS.get()))
+                .save(pWriter);
+
+
+        //Nuggets
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TEQIUM_INGOT.get())
                 .pattern("XXX")
@@ -308,6 +385,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.COPPER_INGOT), has(Items.COPPER_INGOT))
                 .save(pWriter);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RAW_TEQIUM.get(),9)
+                .requires(ModBlocks.RAW_TEQIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_TEQIUM_BLOCK.get()), has(ModBlocks.RAW_TEQIUM_BLOCK.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.TEQIUM.get(),9)
                 .requires(ModBlocks.TEQIUM_BLOCK.get())
@@ -346,6 +427,49 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.TEQIUM_INGOT.get()), has(ModItems.TEQIUM_INGOT.get()))
                 .save(pWriter);
 
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.OAK_SLAB, Items.OAK_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.OAK_STAIRS, Items.OAK_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.OAK_FENCE, Items.OAK_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.SPRUCE_SLAB, Items.SPRUCE_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.SPRUCE_STAIRS, Items.SPRUCE_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.SPRUCE_FENCE, Items.SPRUCE_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BIRCH_SLAB, Items.BIRCH_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BIRCH_STAIRS, Items.BIRCH_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BIRCH_FENCE, Items.BIRCH_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.JUNGLE_SLAB, Items.JUNGLE_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.JUNGLE_STAIRS, Items.JUNGLE_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.JUNGLE_FENCE, Items.JUNGLE_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.ACACIA_SLAB, Items.ACACIA_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.ACACIA_STAIRS, Items.ACACIA_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.ACACIA_FENCE, Items.ACACIA_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.DARK_OAK_SLAB, Items.DARK_OAK_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.DARK_OAK_STAIRS, Items.DARK_OAK_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.DARK_OAK_FENCE, Items.DARK_OAK_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.MANGROVE_SLAB, Items.MANGROVE_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.MANGROVE_STAIRS, Items.MANGROVE_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.MANGROVE_FENCE, Items.MANGROVE_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CHERRY_SLAB, Items.CHERRY_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CHERRY_STAIRS, Items.CHERRY_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CHERRY_FENCE, Items.CHERRY_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BAMBOO_SLAB, Items.BAMBOO_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BAMBOO_STAIRS, Items.BAMBOO_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.BAMBOO_FENCE, Items.BAMBOO_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CRIMSON_SLAB, Items.CRIMSON_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CRIMSON_STAIRS, Items.CRIMSON_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.CRIMSON_FENCE, Items.CRIMSON_PLANKS,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.WARPED_SLAB, Items.WARPED_PLANKS,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.WARPED_STAIRS, Items.WARPED_PLANKS,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.WARPED_FENCE, Items.WARPED_PLANKS,1);
 
     }
 
@@ -378,5 +502,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     protected static void nineBlockStorageRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pUnpackedCategory, ItemLike pUnpacked, RecipeCategory pPackedCategory, ItemLike pPacked) {
         nineBlockStorageRecipes(pFinishedRecipeConsumer, pUnpackedCategory, pUnpacked, pPackedCategory, pPacked, getSimpleRecipeName(pPacked), (String)null, getSimpleRecipeName(pUnpacked), (String)null);
+    }
+    protected static void stonecutterResultFromBase(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory pCategory, ItemLike pResult, ItemLike pMaterial) {
+        stonecutterResultFromBase(pFinishedRecipeConsumer, pCategory, pResult, pMaterial, 1);
     }
 }

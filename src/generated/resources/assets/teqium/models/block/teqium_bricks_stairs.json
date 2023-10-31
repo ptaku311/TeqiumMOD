@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "teqium:block/teqium_bricks",
-    "side": "teqium:block/teqium_bricks",
-    "top": "teqium:block/teqium_bricks"
-  }
-}

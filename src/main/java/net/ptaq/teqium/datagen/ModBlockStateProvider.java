@@ -21,13 +21,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_TEQIUM_BLOCK);
         blockWithItem(ModBlocks.TEQIUM_BLOCK);
         blockWithItem(ModBlocks.TEQIUM_BRICKS);
+        blockWithItem(ModBlocks.SNOW_BRICKS);
 
         blockWithItem(ModBlocks.DEEPSLATE_TEQIUM_ORE);
         blockWithItem(ModBlocks.TEQIUM_ORE);
 
-        stairsBlock(((StairBlock) ModBlocks.TEQIUM_BRICKS_STAIRS.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
-        slabBlock(((SlabBlock) ModBlocks.TEQIUM_BRICKS_SLAB.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
-        wallBlock(((WallBlock) ModBlocks.TEQIUM_BRICKS_WALL.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
+        stairsBlock(((StairBlock) ModBlocks.TEQIUM_BRICK_STAIRS.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.TEQIUM_BRICK_SLAB.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.TEQIUM_BRICK_WALL.get()), blockTexture(ModBlocks.TEQIUM_BRICKS.get()));
+
+        stairsBlock(((StairBlock) ModBlocks.SNOW_BRICK_STAIRS.get()), blockTexture(ModBlocks.SNOW_BRICKS.get()));
+        slabBlock(((SlabBlock) ModBlocks.SNOW_BRICK_SLAB.get()), blockTexture(ModBlocks.SNOW_BRICKS.get()), blockTexture(ModBlocks.SNOW_BRICKS.get()));
+        wallBlock(((WallBlock) ModBlocks.SNOW_BRICK_WALL.get()), blockTexture(ModBlocks.SNOW_BRICKS.get()));
 
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

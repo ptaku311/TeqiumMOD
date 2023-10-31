@@ -89,8 +89,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.NETHERITE_BIG_SWORD);
         handheldItem(ModItems.TEQIUM_BIG_SWORD);
 
-        wallItem(ModBlocks.TEQIUM_BRICKS_WALL, ModBlocks.TEQIUM_BRICKS);
+        wallItem(ModBlocks.TEQIUM_BRICK_WALL, ModBlocks.TEQIUM_BRICKS);
+        fixBlockItem(ModBlocks.TEQIUM_BRICK_SLAB);
+        fixBlockItem(ModBlocks.TEQIUM_BRICK_STAIRS);
 
+        wallItem(ModBlocks.SNOW_BRICK_WALL, ModBlocks.SNOW_BRICKS);
+        fixBlockItem(ModBlocks.SNOW_BRICK_SLAB);
+        fixBlockItem(ModBlocks.SNOW_BRICK_STAIRS);
     }
 
     // Shoutout to El_Redstoniano for making this
@@ -159,5 +164,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Teqium.MOD_ID,"item/" + item.getId().getPath()));
+    }
+    public void fixBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(Teqium.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 }

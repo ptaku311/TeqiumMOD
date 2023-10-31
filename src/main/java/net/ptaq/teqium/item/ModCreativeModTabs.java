@@ -4,7 +4,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -56,7 +55,16 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_TEQIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.TEQIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_TEQIUM_ORE.get());
+
                         pOutput.accept(ModBlocks.TEQIUM_BRICKS.get());
+                        pOutput.accept(ModBlocks.TEQIUM_BRICK_WALL.get());
+                        pOutput.accept(ModBlocks.TEQIUM_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.TEQIUM_BRICK_SLAB.get());
+
+                        pOutput.accept(ModBlocks.SNOW_BRICKS.get());
+                        pOutput.accept(ModBlocks.SNOW_BRICK_WALL.get());
+                        pOutput.accept(ModBlocks.SNOW_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.SNOW_BRICK_SLAB.get());
 
                         pOutput.accept(ModItems.COPPER_DAGGER.get());
                         pOutput.accept(ModItems.GOLDEN_DAGGER.get());

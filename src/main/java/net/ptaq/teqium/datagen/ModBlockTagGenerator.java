@@ -29,20 +29,26 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_TEQIUM_ORE.get(),
                         ModBlocks.TEQIUM_ORE.get(),
                         ModBlocks.TEQIUM_BRICKS.get(),
-                        ModBlocks.TEQIUM_BRICKS_WALL.get(),
-                        ModBlocks.TEQIUM_BRICKS_STAIRS.get(),
-                        ModBlocks.TEQIUM_BRICKS_SLAB.get()
+                        ModBlocks.TEQIUM_BRICK_WALL.get(),
+                        ModBlocks.TEQIUM_BRICK_STAIRS.get(),
+                        ModBlocks.TEQIUM_BRICK_SLAB.get(),
+                        ModBlocks.SNOW_BRICKS.get(),
+                        ModBlocks.SNOW_BRICK_WALL.get(),
+                        ModBlocks.SNOW_BRICK_STAIRS.get(),
+                        ModBlocks.SNOW_BRICK_SLAB.get()
 
                 );
 
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.SNOW_BRICKS.get(), ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_STAIRS.get(), ModBlocks.SNOW_BRICK_SLAB.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TEQIUM_BLOCK.get(), ModBlocks.TEQIUM_BRICKS.get(),
-                        ModBlocks.TEQIUM_BRICKS_SLAB.get(),ModBlocks.TEQIUM_BRICKS_STAIRS.get(),ModBlocks.TEQIUM_BRICKS_WALL.get());
+                        ModBlocks.TEQIUM_BRICK_SLAB.get(),ModBlocks.TEQIUM_BRICK_STAIRS.get(),ModBlocks.TEQIUM_BRICK_WALL.get());
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.DEEPSLATE_TEQIUM_ORE.get(),ModBlocks.TEQIUM_ORE.get(),ModBlocks.RAW_TEQIUM_BLOCK.get());
         this.tag(ModTags.Blocks.NEEDS_TEQIUM_TOOL);
 
         this.tag(BlockTags.WALLS)
-                .add(ModBlocks.TEQIUM_BRICKS_WALL.get());
+                .add(ModBlocks.TEQIUM_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_WALL.get());
     }
 }

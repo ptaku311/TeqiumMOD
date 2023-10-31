@@ -1,6 +1,7 @@
-// 1.20.1	2023-10-29T19:34:20.3161753	Tags for minecraft:block mod id teqium
+// 1.20.1	2023-10-30T11:08:31.2535632	Tags for minecraft:block mod id teqium
 420ac320465286502c9456854e8c9fa4c4b0214a data/forge/tags/blocks/needs_netherite_tool.json
-897e8399dd7d469d8f542246c1f749702c13b4a3 data/minecraft/tags/blocks/mineable/pickaxe.json
-f60df76ac2e4611b87778fd69336cc68b1970ddd data/minecraft/tags/blocks/needs_iron_tool.json
-9ca11876db21f8d830074b959bc39f9213d5cb03 data/minecraft/tags/blocks/walls.json
+64ac27bfdbac8afccd61010eb87a6ff9615f353a data/minecraft/tags/blocks/mineable/pickaxe.json
+88c073ae959079621f863468faf4be6d89c54790 data/minecraft/tags/blocks/needs_iron_tool.json
+2da63d07913f1728662c8ec7f99be8c0b25be599 data/minecraft/tags/blocks/needs_stone_tool.json
+648605937a78c51ad6c29d2d81d3b6e91bf2ede2 data/minecraft/tags/blocks/walls.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/teqium/tags/blocks/needs_teqium_tool.json

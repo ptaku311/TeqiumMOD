@@ -52,9 +52,14 @@
   "block.teqium.deepslate_teqium_ore": "Deepslate Teqium Ore",
 
   "block.teqium.teqium_bricks": "Teqium Bricks",
-  "block.teqium.teqium_bricks_wall": "Teqium Bricks Wall",
-  "block.teqium.teqium_bricks_slab": "Teqium Bricks Slab",
-  "block.teqium.teqium_bricks_stairs": "Teqium Bricks Stairs",
+  "block.teqium.teqium_brick_wall": "Teqium Brick Wall",
+  "block.teqium.teqium_brick_slab": "Teqium Brick Slab",
+  "block.teqium.teqium_brick_stairs": "Teqium Brick Stairs",
+
+  "block.teqium.snow_bricks": "Snow Bricks",
+  "block.teqium.snow_brick_wall": "Teqium Brick Wall",
+  "block.teqium.snow_brick_slab": "Teqium Brick Slab",
+  "block.teqium.snow_brick_stairs": "Teqium Brick Stairs",
 
   "creativetab.teqium_tab": "Teqium Tab"
 

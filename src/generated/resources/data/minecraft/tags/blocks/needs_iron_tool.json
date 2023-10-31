@@ -2,8 +2,8 @@
   "values": [
     "teqium:teqium_block",
     "teqium:teqium_bricks",
-    "teqium:teqium_bricks_slab",
-    "teqium:teqium_bricks_stairs",
-    "teqium:teqium_bricks_wall"
+    "teqium:teqium_brick_slab",
+    "teqium:teqium_brick_stairs",
+    "teqium:teqium_brick_wall"
   ]
 }
