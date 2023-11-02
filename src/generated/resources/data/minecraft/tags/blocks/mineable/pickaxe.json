@@ -11,6 +11,12 @@
     "teqium:snow_bricks",
     "teqium:snow_brick_wall",
     "teqium:snow_brick_stairs",
-    "teqium:snow_brick_slab"
+    "teqium:snow_brick_slab",
+    "teqium:blue_ice_wall",
+    "teqium:blue_ice_stairs",
+    "teqium:blue_ice_slab",
+    "teqium:packed_ice_wall",
+    "teqium:packed_ice_stairs",
+    "teqium:packed_ice_slab"
   ]
 }

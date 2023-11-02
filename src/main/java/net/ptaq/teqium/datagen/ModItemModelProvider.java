@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -96,6 +97,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.SNOW_BRICK_WALL, ModBlocks.SNOW_BRICKS);
         fixBlockItem(ModBlocks.SNOW_BRICK_SLAB);
         fixBlockItem(ModBlocks.SNOW_BRICK_STAIRS);
+
+        wallItem2(ModBlocks.BLUE_ICE_WALL, Blocks.BLUE_ICE);
+        fixBlockItem(ModBlocks.BLUE_ICE_SLAB);
+        fixBlockItem(ModBlocks.BLUE_ICE_STAIRS);
+
+        wallItem2(ModBlocks.PACKED_ICE_WALL, Blocks.PACKED_ICE);
+        fixBlockItem(ModBlocks.PACKED_ICE_SLAB);
+        fixBlockItem(ModBlocks.PACKED_ICE_STAIRS);
     }
 
     // Shoutout to El_Redstoniano for making this
@@ -164,6 +173,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Teqium.MOD_ID,"item/" + item.getId().getPath()));
+    }
+    public void wallItem2(RegistryObject<Block> block, Block baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation("block/" + ForgeRegistries.BLOCKS.getKey(baseBlock).getPath()));
     }
     public void fixBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(Teqium.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),

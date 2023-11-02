@@ -51,6 +51,24 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.SNOW)));
 
 
+    public static final RegistryObject<Block> BLUE_ICE_WALL = registerBlock("blue_ice_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> BLUE_ICE_STAIRS = registerBlock("blue_ice_stairs",
+            () -> new StairBlock(() -> Blocks.BLUE_ICE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> BLUE_ICE_SLAB = registerBlock("blue_ice_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.GLASS)));
+
+
+
+    public static final RegistryObject<Block> PACKED_ICE_WALL = registerBlock("packed_ice_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_WALL).sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> PACKED_ICE_STAIRS = registerBlock("packed_ice_stairs",
+            () -> new StairBlock(() -> Blocks.PACKED_ICE.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_STAIRS).sound(SoundType.GLASS)));
+    public static final RegistryObject<Block> PACKED_ICE_SLAB = registerBlock("packed_ice_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB).sound(SoundType.GLASS)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

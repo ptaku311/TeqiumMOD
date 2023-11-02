@@ -1,4 +1,7 @@
-// 1.20.1	2023-10-30T10:42:16.6283021	Item Models: teqium
+// 1.20.1	2023-11-02T09:15:24.1921184	Item Models: teqium
+959bf5f53a0b4c44babe5a0a71a6d35a8466c726 assets/teqium/models/item/blue_ice_slab.json
+fc62f40315183116fdf0edacc984bb144f7f5794 assets/teqium/models/item/blue_ice_stairs.json
+f655ec85ec34211459331ee9ca4a4295a42ebe87 assets/teqium/models/item/blue_ice_wall.json
 b2859f99103af15983683bfd43bdb2e03e3b1cfb assets/teqium/models/item/copper_axe.json
 6a929bfaacef344e132fe8755942360de4bcce9c assets/teqium/models/item/copper_big_sword.json
 fc9f7b5bec9e8e6e91f8f8dd9a7f979f2fc4e0e8 assets/teqium/models/item/copper_boots.json
@@ -21,6 +24,9 @@ c26495e0d6ea3cc25d4ff5ce6e4073388ce90e93 assets/teqium/models/item/iron_big_swor
 909070e3ef48c738c07ded95d9763cc82b9e5251 assets/teqium/models/item/netherite_big_sword.json
 aae4dafa203ddaf37f758312b1e7f226da988be8 assets/teqium/models/item/netherite_dagger.json
 5994998e578644f103b364e232f00362fdb8e0a5 assets/teqium/models/item/netherite_nugget.json
+70c68f411994b0303a87860183d3716d878f3a1e assets/teqium/models/item/packed_ice_slab.json
+7db02f769982d5991c25fcc63ffa0c4bfebf5fa7 assets/teqium/models/item/packed_ice_stairs.json
+11ecfab88bc273f562f1c2fbab741e46e01b4df8 assets/teqium/models/item/packed_ice_wall.json
 6ddcd3e335493b8d4ede6dcc27465d33eb4d2c70 assets/teqium/models/item/raw_teqium.json
 08bb6afc2ebc00cac7de98e46467824a63954d1f assets/teqium/models/item/snow_brick_slab.json
 54b3fc2e859744d8348abaeabfa1daa2636bff59 assets/teqium/models/item/snow_brick_stairs.json

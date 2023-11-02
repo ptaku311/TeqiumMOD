@@ -66,6 +66,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SNOW_BRICK_STAIRS.get());
                         pOutput.accept(ModBlocks.SNOW_BRICK_SLAB.get());
 
+                        pOutput.accept(ModBlocks.BLUE_ICE_WALL.get());
+                        pOutput.accept(ModBlocks.BLUE_ICE_STAIRS.get());
+                        pOutput.accept(ModBlocks.BLUE_ICE_SLAB.get());
+
+                        pOutput.accept(ModBlocks.PACKED_ICE_WALL.get());
+                        pOutput.accept(ModBlocks.PACKED_ICE_STAIRS.get());
+                        pOutput.accept(ModBlocks.PACKED_ICE_SLAB.get());
+
                         pOutput.accept(ModItems.COPPER_DAGGER.get());
                         pOutput.accept(ModItems.GOLDEN_DAGGER.get());
                         pOutput.accept(ModItems.IRON_DAGGER.get());
@@ -79,7 +87,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.DIAMOND_BIG_SWORD.get());
                         pOutput.accept(ModItems.NETHERITE_BIG_SWORD.get());
                         pOutput.accept(ModItems.TEQIUM_BIG_SWORD.get());
-
 
                     })
                     .build());

@@ -1,5 +1,11 @@
-// 1.20.1	2023-10-30T10:42:16.6332987	Loot Tables
+// 1.20.1	2023-11-02T08:24:52.9520343	Loot Tables
+367c235b47c1b716677bcb0b93cd2c086e8398d4 data/teqium/loot_tables/blocks/blue_ice_slab.json
+3c9e4a1f362e24549defc8b23f4525dfd1be001c data/teqium/loot_tables/blocks/blue_ice_stairs.json
+b536a58fa91ed3a2ade66c83f99c4d2ed9011d0a data/teqium/loot_tables/blocks/blue_ice_wall.json
 277151553cf09e94ed9207b76bfe399169d462bd data/teqium/loot_tables/blocks/deepslate_teqium_ore.json
+7859c178ed8d9e206b75396d4772b3b5dcacbdf0 data/teqium/loot_tables/blocks/packed_ice_slab.json
+4182c73658ebc12020c5568ccce7866673221b47 data/teqium/loot_tables/blocks/packed_ice_stairs.json
+0e5c7bf9dbb2c6aacf0e6c8e1c0dd6e70c501b4b data/teqium/loot_tables/blocks/packed_ice_wall.json
 1f1eb8e34fecb6be38574933a5a3d5157617bfdb data/teqium/loot_tables/blocks/raw_teqium_block.json
 6f45b0af79f0b779198cb3486c55758a66ceeeab data/teqium/loot_tables/blocks/snow_bricks.json
 ff947067e23b25531eeb59f5a7c4fb10f91dcba5 data/teqium/loot_tables/blocks/snow_brick_slab.json

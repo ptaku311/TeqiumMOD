@@ -6,6 +6,7 @@ import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.ptaq.teqium.Teqium;
 import net.ptaq.teqium.block.ModBlocks;
 import net.ptaq.teqium.util.ModTags;
@@ -35,12 +36,22 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SNOW_BRICKS.get(),
                         ModBlocks.SNOW_BRICK_WALL.get(),
                         ModBlocks.SNOW_BRICK_STAIRS.get(),
-                        ModBlocks.SNOW_BRICK_SLAB.get()
+                        ModBlocks.SNOW_BRICK_SLAB.get(),
+
+                        ModBlocks.BLUE_ICE_WALL.get(),
+                        ModBlocks.BLUE_ICE_STAIRS.get(),
+                        ModBlocks.BLUE_ICE_SLAB.get(),
+
+                        ModBlocks.PACKED_ICE_WALL.get(),
+                        ModBlocks.PACKED_ICE_STAIRS.get(),
+                        ModBlocks.PACKED_ICE_SLAB.get()
 
                 );
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(ModBlocks.SNOW_BRICKS.get(), ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_STAIRS.get(), ModBlocks.SNOW_BRICK_SLAB.get());
+                .add(ModBlocks.SNOW_BRICKS.get(), ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_STAIRS.get(), ModBlocks.SNOW_BRICK_SLAB.get(),
+                        ModBlocks.BLUE_ICE_WALL.get(),  ModBlocks.PACKED_ICE_WALL.get(),  ModBlocks.BLUE_ICE_STAIRS.get(),  ModBlocks.PACKED_ICE_STAIRS.get(),
+                        ModBlocks.BLUE_ICE_SLAB.get(),  ModBlocks.PACKED_ICE_SLAB.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.TEQIUM_BLOCK.get(), ModBlocks.TEQIUM_BRICKS.get(),
                         ModBlocks.TEQIUM_BRICK_SLAB.get(),ModBlocks.TEQIUM_BRICK_STAIRS.get(),ModBlocks.TEQIUM_BRICK_WALL.get());
@@ -49,6 +60,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModTags.Blocks.NEEDS_TEQIUM_TOOL);
 
         this.tag(BlockTags.WALLS)
-                .add(ModBlocks.TEQIUM_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_WALL.get());
+                .add(ModBlocks.TEQIUM_BRICK_WALL.get(), ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.BLUE_ICE_WALL.get(), ModBlocks.PACKED_ICE_WALL.get());
     }
 }

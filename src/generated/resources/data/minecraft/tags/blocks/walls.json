@@ -1,6 +1,8 @@
 {
   "values": [
     "teqium:teqium_brick_wall",
-    "teqium:snow_brick_wall"
+    "teqium:snow_brick_wall",
+    "teqium:blue_ice_wall",
+    "teqium:packed_ice_wall"
   ]
 }

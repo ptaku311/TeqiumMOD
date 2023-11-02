@@ -57,9 +57,18 @@
   "block.teqium.teqium_brick_stairs": "Teqium Brick Stairs",
 
   "block.teqium.snow_bricks": "Snow Bricks",
-  "block.teqium.snow_brick_wall": "Teqium Brick Wall",
-  "block.teqium.snow_brick_slab": "Teqium Brick Slab",
-  "block.teqium.snow_brick_stairs": "Teqium Brick Stairs",
+  "block.teqium.snow_brick_wall": "Snow Brick Wall",
+  "block.teqium.snow_brick_slab": "Snow Brick Slab",
+  "block.teqium.snow_brick_stairs": "Snow Brick Stairs",
+
+  "block.teqium.blue_ice_wall": "Blue Ice Wall",
+  "block.teqium.blue_ice_slab": "Blue Ice Slab",
+  "block.teqium.blue_ice_stairs": "Blue Ice Stairs",
+
+  "block.teqium.packed_ice_wall": "Packed Ice Wall",
+  "block.teqium.packed_ice_slab": "Packed Ice Slab",
+  "block.teqium.packed_ice_stairs": "Packed Ice Stairs",
+
 
   "creativetab.teqium_tab": "Teqium Tab"
 

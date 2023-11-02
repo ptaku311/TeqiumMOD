@@ -35,6 +35,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SNOW_BRICK_STAIRS.get());
         this.add(ModBlocks.SNOW_BRICK_SLAB.get(), block -> createSlabItemTable(ModBlocks.SNOW_BRICK_SLAB.get()));
 
+        this.dropSelf(ModBlocks.BLUE_ICE_WALL.get());
+        this.dropSelf(ModBlocks.BLUE_ICE_STAIRS.get());
+        this.add(ModBlocks.BLUE_ICE_SLAB.get(), block -> createSlabItemTable(ModBlocks.BLUE_ICE_SLAB.get()));
+
+        this.dropSelf(ModBlocks.PACKED_ICE_WALL.get());
+        this.dropSelf(ModBlocks.PACKED_ICE_STAIRS.get());
+        this.add(ModBlocks.PACKED_ICE_SLAB.get(), block -> createSlabItemTable(ModBlocks.PACKED_ICE_SLAB.get()));
+
         this.add(ModBlocks.TEQIUM_ORE.get(),
                 block -> createCopperOreDrops(ModBlocks.TEQIUM_ORE.get(), ModItems.RAW_TEQIUM.get()));
         this.add(ModBlocks.DEEPSLATE_TEQIUM_ORE.get(),

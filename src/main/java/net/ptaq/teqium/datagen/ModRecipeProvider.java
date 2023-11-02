@@ -9,6 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.ptaq.teqium.Teqium;
 import net.ptaq.teqium.block.ModBlocks;
@@ -210,6 +211,57 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SNOW_BRICKS.get()), has(ModBlocks.SNOW_BRICKS.get()))
                 .save(pWriter);
 
+        //Blue ice
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUE_ICE_STAIRS.get(), 6)
+                .pattern("X  ")
+                .pattern("XX ")
+                .pattern("XXX")
+                .define('X', Blocks.BLUE_ICE)
+                .unlockedBy(getHasName(Blocks.BLUE_ICE), has(Blocks.BLUE_ICE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUE_ICE_SLAB.get(), 6)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XXX")
+                .define('X', Blocks.BLUE_ICE)
+                .unlockedBy(getHasName(Blocks.BLUE_ICE), has(Blocks.BLUE_ICE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUE_ICE_WALL.get(), 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', Blocks.BLUE_ICE)
+                .unlockedBy(getHasName(Blocks.BLUE_ICE), has(Blocks.BLUE_ICE))
+                .save(pWriter);
+
+        //Packed Ice
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PACKED_ICE_STAIRS.get(), 6)
+                .pattern("X  ")
+                .pattern("XX ")
+                .pattern("XXX")
+                .define('X', Blocks.PACKED_ICE)
+                .unlockedBy(getHasName(Blocks.PACKED_ICE), has(Blocks.PACKED_ICE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PACKED_ICE_SLAB.get(), 6)
+                .pattern("   ")
+                .pattern("   ")
+                .pattern("XXX")
+                .define('X', Blocks.PACKED_ICE)
+                .unlockedBy(getHasName(Blocks.PACKED_ICE), has(Blocks.PACKED_ICE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PACKED_ICE_WALL.get(), 6)
+                .pattern("   ")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', Blocks.PACKED_ICE)
+                .unlockedBy(getHasName(Blocks.PACKED_ICE), has(Blocks.PACKED_ICE))
+                .save(pWriter);
 
         //Nuggets
 
@@ -471,6 +523,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.WARPED_STAIRS, Items.WARPED_PLANKS,1);
         stonecutterResultFromBase(pWriter, RecipeCategory.MISC, Items.WARPED_FENCE, Items.WARPED_PLANKS,1);
 
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.SNOW_BRICK_SLAB.get(), ModBlocks.SNOW_BRICKS.get(),2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.SNOW_BRICK_STAIRS.get(), ModBlocks.SNOW_BRICKS.get(),1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.SNOW_BRICK_WALL.get(), ModBlocks.SNOW_BRICKS.get(),1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.BLUE_ICE_SLAB.get(), Items.BLUE_ICE,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.BLUE_ICE_STAIRS.get(), Items.BLUE_ICE,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.BLUE_ICE_WALL.get(), Items.BLUE_ICE,1);
+
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.PACKED_ICE_SLAB.get(), Items.PACKED_ICE,2);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.PACKED_ICE_STAIRS.get(), Items.PACKED_ICE,1);
+        stonecutterResultFromBase(pWriter, RecipeCategory.MISC, ModBlocks.PACKED_ICE_WALL.get(), Items.PACKED_ICE,1);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
