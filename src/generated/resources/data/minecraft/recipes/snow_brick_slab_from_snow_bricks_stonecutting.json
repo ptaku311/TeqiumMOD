@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "teqium:snow_bricks"
+  },
+  "result": "teqium:snow_brick_slab"
+}

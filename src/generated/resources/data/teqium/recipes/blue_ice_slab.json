@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:blue_ice"
+    }
+  },
+  "pattern": [
+    "   ",
+    "   ",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "teqium:blue_ice_slab"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "teqium:teqium_bricks"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "teqium:teqium_brick_wall"
+  },
+  "show_notification": true
+}

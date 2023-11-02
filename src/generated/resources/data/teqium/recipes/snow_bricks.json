@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:snow_block"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XX ",
+    "XX "
+  ],
+  "result": {
+    "count": 4,
+    "item": "teqium:snow_bricks"
+  },
+  "show_notification": true
+}

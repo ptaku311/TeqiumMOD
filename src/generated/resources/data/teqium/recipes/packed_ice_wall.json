@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:packed_ice"
+    }
+  },
+  "pattern": [
+    "   ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "teqium:packed_ice_wall"
+  },
+  "show_notification": true
+}
