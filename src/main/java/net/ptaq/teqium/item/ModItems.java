@@ -112,6 +112,21 @@ public class ModItems {
             ()-> new SwordItem(ModToolTiers.TEQIUM, 5, -3F, new Item.Properties()));
 
 
+    public static final RegistryObject<Item> COPPER_MACE = ITEMS.register("copper_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 7, -3.5F, new Item.Properties()));
+    public static final RegistryObject<Item> GOLDEN_MACE = ITEMS.register("golden_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 5, -3.5F, new Item.Properties()));
+    public static final RegistryObject<Item> IRON_MACE = ITEMS.register("iron_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 7, -3.5F, new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_MACE = ITEMS.register("diamond_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 7, -3.5F, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERITE_MACE = ITEMS.register("netherite_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 8, -3.5F, new Item.Properties()));
+    public static final RegistryObject<Item> TEQIUM_MACE = ITEMS.register("teqium_mace",
+            ()-> new SwordItem(ModToolTiers.COPPER, 9, -3.5F, new Item.Properties()));
+
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

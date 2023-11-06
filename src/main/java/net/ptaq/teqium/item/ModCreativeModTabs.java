@@ -88,6 +88,12 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.NETHERITE_BIG_SWORD.get());
                         pOutput.accept(ModItems.TEQIUM_BIG_SWORD.get());
 
+                        pOutput.accept(ModItems.COPPER_MACE.get());
+                        pOutput.accept(ModItems.GOLDEN_MACE.get());
+                        pOutput.accept(ModItems.IRON_MACE.get());
+                        pOutput.accept(ModItems.DIAMOND_MACE.get());
+                        pOutput.accept(ModItems.NETHERITE_MACE.get());
+                        pOutput.accept(ModItems.TEQIUM_MACE.get());
                     })
                     .build());
 

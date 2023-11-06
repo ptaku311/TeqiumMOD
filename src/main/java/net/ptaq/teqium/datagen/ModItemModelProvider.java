@@ -90,6 +90,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.NETHERITE_BIG_SWORD);
         handheldItem(ModItems.TEQIUM_BIG_SWORD);
 
+        handheldItem(ModItems.COPPER_MACE);
+        handheldItem(ModItems.GOLDEN_MACE);
+        handheldItem(ModItems.IRON_MACE);
+        handheldItem(ModItems.DIAMOND_MACE);
+        handheldItem(ModItems.NETHERITE_MACE);
+        handheldItem(ModItems.TEQIUM_MACE);
+
         wallItem(ModBlocks.TEQIUM_BRICK_WALL, ModBlocks.TEQIUM_BRICKS);
         fixBlockItem(ModBlocks.TEQIUM_BRICK_SLAB);
         fixBlockItem(ModBlocks.TEQIUM_BRICK_STAIRS);

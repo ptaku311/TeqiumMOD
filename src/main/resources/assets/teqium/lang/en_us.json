@@ -69,6 +69,13 @@
   "block.teqium.packed_ice_slab": "Packed Ice Slab",
   "block.teqium.packed_ice_stairs": "Packed Ice Stairs",
 
+  "item.teqium.copper_mace": "Copper Mace",
+  "item.teqium.golden_mace": "Golden Mace",
+  "item.teqium.iron_mace": "Iron Mace",
+  "item.teqium.diamond_mace": "Diamond Mace",
+  "item.teqium.netherite_mace": "Netherite Mace",
+  "item.teqium.teqium_mace": "Teqium Mace",
+
 
   "creativetab.teqium_tab": "Teqium Tab"
 
