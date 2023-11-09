@@ -97,6 +97,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.NETHERITE_MACE);
         handheldItem(ModItems.TEQIUM_MACE);
 
+        handheldItem(ModItems.COPPER_RAPIER);
+        handheldItem(ModItems.GOLDEN_RAPIER);
+        handheldItem(ModItems.IRON_RAPIER);
+        handheldItem(ModItems.DIAMOND_RAPIER);
+        handheldItem(ModItems.NETHERITE_RAPIER);
+        handheldItem(ModItems.TEQIUM_RAPIER);
+
         wallItem(ModBlocks.TEQIUM_BRICK_WALL, ModBlocks.TEQIUM_BRICKS);
         fixBlockItem(ModBlocks.TEQIUM_BRICK_SLAB);
         fixBlockItem(ModBlocks.TEQIUM_BRICK_STAIRS);

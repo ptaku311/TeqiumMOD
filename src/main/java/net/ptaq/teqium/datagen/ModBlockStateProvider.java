@@ -40,6 +40,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.PACKED_ICE_SLAB.get()), blockTexture(Blocks.PACKED_ICE), blockTexture(Blocks.PACKED_ICE));
         wallBlock(((WallBlock) ModBlocks.PACKED_ICE_WALL.get()), blockTexture(Blocks.PACKED_ICE));
 
+
     }
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

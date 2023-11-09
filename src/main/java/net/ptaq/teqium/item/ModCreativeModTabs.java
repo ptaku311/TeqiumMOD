@@ -94,6 +94,15 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.DIAMOND_MACE.get());
                         pOutput.accept(ModItems.NETHERITE_MACE.get());
                         pOutput.accept(ModItems.TEQIUM_MACE.get());
+
+                        pOutput.accept(ModItems.COPPER_RAPIER.get());
+                        pOutput.accept(ModItems.GOLDEN_RAPIER.get());
+                        pOutput.accept(ModItems.IRON_RAPIER.get());
+                        pOutput.accept(ModItems.DIAMOND_RAPIER.get());
+                        pOutput.accept(ModItems.NETHERITE_RAPIER.get());
+                        pOutput.accept(ModItems.TEQIUM_RAPIER.get());
+
+                        pOutput.accept(ModItems.TEQIUMBOW.get());
                     })
                     .build());
 

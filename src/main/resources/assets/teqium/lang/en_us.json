@@ -76,6 +76,15 @@
   "item.teqium.netherite_mace": "Netherite Mace",
   "item.teqium.teqium_mace": "Teqium Mace",
 
+  "item.teqium.copper_rapier": "Copper Rapier",
+  "item.teqium.golden_rapier": "Golden Rapier",
+  "item.teqium.iron_rapier": "Iron Rapier",
+  "item.teqium.diamond_rapier": "Diamond Rapier",
+  "item.teqium.netherite_rapier": "Netherite Rapier",
+  "item.teqium.teqium_rapier": "Teqium Rapier",
+
+  "item.teqium.teqiumbow": "Teqium Bow",
+
 
   "creativetab.teqium_tab": "Teqium Tab"
 

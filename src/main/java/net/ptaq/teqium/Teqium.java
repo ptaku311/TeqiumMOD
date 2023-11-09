@@ -15,6 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ptaq.teqium.block.ModBlocks;
 import net.ptaq.teqium.item.ModCreativeModTabs;
 import net.ptaq.teqium.item.ModItems;
+import net.ptaq.teqium.util.ModItemProperties;
 import org.slf4j.Logger;
 @Mod(Teqium.MOD_ID)
 public class Teqium {
@@ -30,10 +31,18 @@ public class Teqium {
         ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+    }
+    private void clientSetup(final FMLClientSetupEvent event) {
+
+
+        ModItemProperties.addCustomItemProperties();
+
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)    {

@@ -1,0 +1,6 @@
+{
+  "parent": "teqium:item/teqiumbow",
+  "textures": {
+    "layer0": "teqium:item/teqiumbow_pulling_1"
+  }
+}

@@ -47,6 +47,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperOreDrops(ModBlocks.TEQIUM_ORE.get(), ModItems.RAW_TEQIUM.get()));
         this.add(ModBlocks.DEEPSLATE_TEQIUM_ORE.get(),
                 block -> createCopperOreDrops(ModBlocks.DEEPSLATE_TEQIUM_ORE.get(), ModItems.RAW_TEQIUM.get()));
+
     }
 
     protected LootTable.Builder createCopperOreDrops(Block pBlock, Item item) {
